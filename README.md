@@ -10,6 +10,9 @@ ffmpeg -i file_example_MP3_700KB.mp3 -f f32le -acodec pcm_f32le input.pcm_f32le
 COMPILING:
 
 gcc f32le_transcode.c -o f32le_transcode -I/opt/local/include -L/opt/local/lib -lavformat -lavcodec -lavfilter -lavresample -lswresample -lavutil
+
+You may need to install dependencies: `sudo apt-get install libavfilter-dev` to get the appropriate header files
+
 usage examples:
 
 CONVERTING F32LE TO AAC OUTPUT FILE:
